@@ -4,7 +4,7 @@
 
   <h2 align="center">Space Tourism Multi-page Website</h2>
   <p align="center">
-    <a href="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl"><strong>Frontend Mentor Challenge</strong></a>
+    <a href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3"><strong>Frontend Mentor Challenge</strong></a>
     <br />
     <br />
     <a href="#">View Demo</a>
