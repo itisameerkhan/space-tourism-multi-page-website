@@ -74,7 +74,7 @@
         justify-content: space-between;
         padding: 25px 35px;
     }
-    .header-navigation .header-navigation-ul
+    .header-navigation ul
     {
         flex-direction: column;
         justify-content: start;
@@ -84,7 +84,6 @@
         height: 100vh;
         gap: 10px;
         width: 60vw;
-        display: none;
     }
     .header-navigation ul a 
     {

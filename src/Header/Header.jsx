@@ -1,7 +1,7 @@
 import './Header.css';
 import Logo from '../assets/shared/logo.svg';
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import IconClose from '../assets/shared/icon-close.svg';
 import IconOpen from '../assets/shared/icon-hamburger.svg';
 
@@ -9,13 +9,32 @@ const Header = () => {
 
     const [burger, setBurger] = useState(true);
 
+    console.log('burger status -> ', burger);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if(window.innerWidth > 700) {
+                setBurger(true);
+            } 
+        }
+
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        }
+
+    },[])
+
     return (
         <div className="header-container">
             <img src={Logo} alt="" />
             <div className="header-navigation">
                 <ul 
                     className='header-navigation-ul'
-                    style={{display: burger === false ? 'flex' : 'none'}}
+                    style={{display: burger === true ? 'flex' : 'none'}}
                     >
                     <NavLink to='/' className={'header-navlink'}> 
                         <span>00</span> 
@@ -35,7 +54,7 @@ const Header = () => {
                     </NavLink>
                 </ul>
                 <img 
-                    src={`${burger ? IconOpen : IconClose}`} 
+                    src={`${burger ? IconClose : IconOpen}`} 
                     className='burger-icon'
                     onClick={() => { setBurger(!burger) }}
                 />
