@@ -82,7 +82,9 @@
         align-items: center;
         justify-content: center;
         gap: 50px;
-        padding-top: 200px;
+        /* height: 100vh; */
+        padding-top: 400px;
+        max-height: 500px;
     }
     .home-left
     {
@@ -138,8 +140,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 50px;
-        padding-top: 90px;
+        gap: 80px;
+        padding-top: 420px;
+        height: 100vh;
+        position: fixed;
     }
     .home-left
     {
@@ -150,7 +154,6 @@
         align-items: center;
         justify-content: center;
         padding:10px;
-        gap: 10px;
     }
     .home-right
     {
@@ -178,7 +181,7 @@
         font-size: 20px;
         text-align: center;
         padding:18px;
-        width: 400px;
+        width: 380px;
         /* height: 100px; */
     }
 }
