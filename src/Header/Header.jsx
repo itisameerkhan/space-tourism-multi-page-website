@@ -1,13 +1,22 @@
 import './Header.css';
 import Logo from '../assets/shared/logo.svg';
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
+import IconClose from '../assets/shared/icon-close.svg';
+import IconOpen from '../assets/shared/icon-hamburger.svg';
 
 const Header = () => {
+
+    const [burger, setBurger] = useState(true);
+
     return (
         <div className="header-container">
             <img src={Logo} alt="" />
             <div className="header-navigation">
-                <ul>
+                <ul 
+                    className='header-navigation-ul'
+                    style={{display: burger === false ? 'flex' : 'none'}}
+                    >
                     <NavLink to='/' className={'header-navlink'}> 
                         <span>00</span> 
                         HOME
@@ -25,6 +34,11 @@ const Header = () => {
                         TECHNOLOGY
                     </NavLink>
                 </ul>
+                <img 
+                    src={`${burger ? IconOpen : IconClose}`} 
+                    className='burger-icon'
+                    onClick={() => { setBurger(!burger) }}
+                />
             </div>
         </div>       
     )

@@ -2,6 +2,7 @@ import './App.css';
 import Header from './Header/Header';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home/Home';
+import './assets/home/background-home-desktop.jpg';
 
 const App = () => {
   return (

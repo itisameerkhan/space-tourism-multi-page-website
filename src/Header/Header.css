@@ -10,13 +10,13 @@
 }
 .header-navigation ul 
 {
-    /* display: flex;
+    display: flex;
     list-style-type: none;
     gap: 50px;
     backdrop-filter: blur(80px);
     justify-content: end;
     width: 800px;
-    padding: 0 50px; */
+    padding: 0 50px;
 }
 .header-navigation ul a 
 {
@@ -30,6 +30,10 @@
     align-items: center;
     height: 100px;
 }
+.burger-icon
+{
+    display: none;
+}
 .header-navigation ul a span 
 {
     font-weight: bolder;
@@ -42,4 +46,58 @@
 .active 
 {
     border-bottom: 3px solid white;
+}
+@media screen and (max-width: 900px)
+{
+    .header-container
+    {
+        /* font-size: 10px */
+    }
+    .header-navigation ul
+    {
+        width: 600px;
+        height: 100px;
+        padding:0;
+        margin:0;
+        gap: 20px;
+    }
+    .header-navigation ul a
+    {
+        font-size: 15px;
+        padding-right: 30px;
+    }
+}
+@media screen and (max-width:700px)
+{
+    .header-container
+    {
+        justify-content: space-between;
+        padding: 25px 35px;
+    }
+    .header-navigation .header-navigation-ul
+    {
+        flex-direction: column;
+        justify-content: start;
+        position: absolute;
+        top:0;
+        right: 0;
+        height: 100vh;
+        gap: 10px;
+        width: 60vw;
+        display: none;
+    }
+    .header-navigation ul a 
+    {
+        font-size: 20px;
+    }
+    .burger-icon
+    {
+        display: block;
+        color:white;
+        cursor: pointer;
+        z-index: 99;
+        position: absolute;
+        top:40px;
+        right: 30px;
+    }
 }
