@@ -1,0 +1,242 @@
+.destination
+{
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
+    height: 100vh;
+    color:white;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+    /* gap: 40px; */
+}
+.destination-left 
+{
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column ;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+    animation: fade-in 700ms ease-in-out;
+    padding-top: 50px;
+}
+.destination-right
+{
+    /* min-width: 900px; */
+    /* width: 60%; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    /* padding-left: 10px; */
+    padding:250px 150px 150px 150px;
+    gap: 20px;
+    animation: fade-in 500ms ease-in-out;
+}
+.destination-left p span
+{
+    font-family: 'Barlow Condensed';
+    font-weight: bolder;
+    font-size: 30px;
+    padding:0 10px;
+    color:gray;
+}
+.destination-left p
+{
+    font-family: 'Barlow Condensed';
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+.destination-img
+{
+    animation: rotate 300s linear infinite;
+    width: 420px;
+}
+.destination-right .destination-navigation ul 
+{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    font-family: 'Barlow Condensed';
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.destination-navigation ul li 
+{
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+.checked-li 
+{
+    border-bottom: 3px solid white;
+}
+.destination-navigation ul li:hover 
+{
+    border-bottom: 3px solid rgb(178, 178, 178);
+}
+.destination-name
+{
+    font-family: 'Bellefair';
+    font-size: 100px;
+    /* font-size: 5vw; */
+    text-transform: uppercase;
+}
+.destination-description
+{
+    font-family: 'Barlow Condensed';
+    font-size: 22px;
+    /* font-size: 2vw ; */
+    color:rgb(163, 163, 163);
+    line-height: 40px;
+    border-bottom: 1px solid rgb(63, 62, 62);
+    padding-bottom: 20px;
+}
+.destination-calculate
+{
+    display: flex;
+    gap: 70px;
+    /* justify-content: space-between; */
+    /* border:2px solid red;    */
+    width: 100%;
+}
+.destination-cal-inner
+{
+    font-family: 'Barlow Condensed';
+    color:rgb(164, 164, 164);
+    font-size: 20px;
+}
+.destination-time
+{
+    font-family: 'Bellefair';
+    font-size: 30px;
+    text-transform: uppercase;
+}
+@keyframes fade-in 
+{
+    from 
+    {
+        opacity: 0;
+    }
+    to 
+    {
+        opacity: 1;
+    }
+}
+@keyframes rotate 
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100% 
+    {
+        transform: rotate(360deg);
+    }
+}
+@media screen and (max-width: 1350px)
+{
+    .destination-right
+    {
+        /* min-width: 500px; */
+        gap: 10px;
+    }
+}
+@media screen and (max-width:1260px)
+{
+    .destination-right
+    {
+        max-width: 600px;
+        padding: 250px 0 150px 150px;
+    }
+}
+@media screen and (max-width:1000px)
+{
+    .destination
+    {
+        flex-direction: column;
+        padding:0;
+        margin: 0;
+        background-image: url('../assets/destination/background-destination-mobile.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        object-position: center;
+        height: 150vh;
+        width: 100vw;
+    }
+    .destination-left 
+    {
+        width: 100%;
+        margin-top: 80px;
+        display: flex;
+        align-items: center;
+    }
+    .destination-img
+    {
+        width: 350px;
+    }
+    .destination-right
+    {
+        width: 100%;
+        padding:0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .destination-description
+    {
+        padding: 0 50px;
+        text-align: center;
+    }
+    .destination-calculate
+    {
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:530px)
+{
+    .destination-left 
+    {
+        margin: 0;
+        padding:0;
+    }
+    .destination-right
+    {
+        padding:0;
+        margin:-130px 0 0 0;
+        /* width: 1110px; */
+    }
+    .destination-description
+    {
+        width: 370px;
+        text-align: center;
+        padding: 0;
+    }
+    .destination-calculate
+    {
+        width: 370px;
+        flex-direction: column;
+        padding:0;
+        gap: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    .destination-calculate ul 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:10px 0;
+    }
+}
