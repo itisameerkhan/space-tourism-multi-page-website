@@ -23,7 +23,6 @@
 .home-left
 {
     width: 40%;
-    /* padding-left: 10%; */
     height: 250px;
 }
 .home-left .home-left-desc
@@ -82,7 +81,6 @@
         align-items: center;
         justify-content: center;
         gap: 50px;
-        /* height: 100vh; */
         padding-top: 400px;
         max-height: 500px;
     }
@@ -124,7 +122,6 @@
         text-align: center;
         padding:18px;
         width: 400px;
-        /* height: 100px; */
     }
 }
 @media screen and (max-width: 700px)
