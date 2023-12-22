@@ -1,0 +1,96 @@
+.crew 
+{
+    background-image: url('../assets/crew/background-crew-desktop.jpg');
+    height: 110vh;
+    color:white;
+    /* width: 95vw; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+    /* padding: 150px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding:0 200px;
+}
+.crew-left 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+}
+.crew-heading
+{
+    font-family: 'Barlow Condensed';
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    padding:15px 0;
+}
+.crew-heading span 
+{
+    font-family: 'Barlow Condensed';
+    font-size: 2rem;
+    font-weight: bolder;
+    color:gray;
+    padding-right: 10px;
+}
+.crew-role 
+{
+    font-family: 'Bellefair';
+    font-size: 2rem;
+    color:gray;
+    text-transform: uppercase;
+}
+.crew-name 
+{
+    font-family: 'Bellefair';
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.crew-right 
+{
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 50%;
+    height: 110vh;
+}
+.crew-right img 
+{
+    /* width: 40vw; */
+    /* height: 75vh; */
+}
+.crew-bio 
+{
+    font-family: 'Barlow Condensed';
+    font-size: 1.3rem;
+    color: rgb(157, 156, 156);
+    line-height: 35px;
+}
+.crew-navigation 
+{
+    display: flex;
+    gap: 10px;
+}
+.crew-nav 
+{
+    height: 20px;
+    width: 20px;
+    background-color: #484A51;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.crew-nav:hover 
+{
+    background-color: white;
+}
+.crew-nav-active 
+{
+    background-color: white;
+}
