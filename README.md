@@ -7,7 +7,7 @@
     <a href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3"><strong>Frontend Mentor Challenge</strong></a>
     <br />
     <br />
-    <a href="#">View Demo</a>
+    <a href="https://space-tourism-multi-page-website-uf2t.vercel.app">View Demo</a>
     &nbsp;·&nbsp;
     <a href="https://github.com/itisameerkhan/space-tourism-multi-page-website/issues">Report Bug</a>
     &nbsp;·&nbsp;
@@ -24,7 +24,7 @@
 
   <!-- Status -->
   <a href="#">
-    <img src="https://img.shields.io/badge/Status-Ongoing-red?style=for-the-badge" alt="Status Ongoing">
+    <img src="https://img.shields.io/badge/Status-Completed-green?style=for-the-badge" alt="Status Completed">
   </a> &nbsp;&nbsp;&nbsp;
 
   <!-- Difficulty -->
@@ -46,14 +46,14 @@
 
 
 <br>
-
+<!-- 
 <!-- ## **Links**
 
 - |||
   | :----- | :----- |
-  | Solution URL: | [SPACE TOURISM MULTI PAGE WEBSITE🎯 [ REACT - CSS ]]() |
-  | Live Site URL: | [https://news-homepage-frontendmentor-1.vercel.app]() |
-  ||| -->
+  | Solution URL: | [SPACE TOURISM MULTI PAGE WEBSITE🎯 [ REACT - CSS ]](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3) |
+  | Live Site URL: | [Click here](https://space-tourism-multi-page-website-uf2t.vercel.app) |
+  ||| --> -->
 
 <br>
 
