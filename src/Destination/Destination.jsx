@@ -3,21 +3,23 @@ import Data from '../data.json';
 import { useState } from 'react';
 import '../assets/destination/background-destination-desktop.jpg';
 import '../assets/destination/background-destination-mobile.jpg';
-import '../assets/destination/image-europa.png';
-import '../assets/destination/image-mars.png';
-import '../assets/destination/image-moon.png';
-import '../assets/destination/image-titan.png';
+import moonImage from  '../assets/destination/image-moon.png';
+import marsImage from '../assets/destination/image-mars.png';
+import europaImage from '../assets/destination/image-europa.png';
+import titanImage from '../assets/destination/image-titan.png';
 
 
 const Destination = () => {
 
     const [destinationIndex, setDestinationIndex] = useState(0);
 
+    const images = [moonImage, marsImage, europaImage, titanImage];
+
     return (
         <div className="destination">
             <div className="destination-left">
                 <p><span>01</span>PICK YOUR DESTINATION</p>
-                <img src={Data?.destinations[destinationIndex]?.images?.png} className='destination-img' />
+                <img src={images[destinationIndex]} className='destination-img' />
             </div>
             <div className="destination-right">
                 <div className="destination-navigation">

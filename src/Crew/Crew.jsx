@@ -3,15 +3,16 @@ import Data from '../data.json';
 import { useState } from 'react';
 import '../assets/destination/background-destination-desktop.jpg';
 import '../assets/destination/background-destination-mobile.jpg';
-import '../assets/crew/image-anousheh-ansari.png';
-import '../assets/crew/image-douglas-hurley.png';
-import '../assets/crew/image-mark-shuttleworth.png';
-import '../assets/crew/image-victor-glover.png';
+import person1 from '../assets/crew/image-douglas-hurley.png';
+import person2 from '../assets/crew/image-mark-shuttleworth.png';
+import person3 from '../assets/crew/image-victor-glover.png';
+import person4 from  '../assets/crew/image-anousheh-ansari.png';
 
 
 const Crew = () => {
 
     const [crewIndex, setCrewIndex] = useState(0);
+    const images = [person1, person2, person3, person4];
 
     return (
         <div className="crew">
@@ -40,7 +41,7 @@ const Crew = () => {
                 </div>
             </div>
             <div className="crew-right">
-                <img src={Data?.crew[crewIndex]?.images?.png} alt="" />
+                <img src={images[crewIndex]} alt="" />
             </div>
         </div>
     )

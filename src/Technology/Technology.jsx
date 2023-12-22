@@ -3,18 +3,20 @@ import Data from '../data.json';
 import { useEffect, useState } from 'react';
 import '../assets/technology/background-technology-desktop.jpg';
 import '../assets/technology/background-technology-mobile.jpg';
-import '../assets/technology/image-launch-vehicle-landscape.jpg';
-import '../assets/technology/image-launch-vehicle-portrait.jpg';
-import '../assets/technology/background-technology-mobile.jpg';
-import '../assets/technology/image-space-capsule-landscape.jpg';
-import '../assets/technology/image-space-capsule-portrait.jpg';
-import '../assets/technology/image-spaceport-landscape.jpg';
-import '../assets/technology/image-spaceport-portrait.jpg';
+import launchVehicleLandscape from '../assets/technology/image-launch-vehicle-landscape.jpg';
+import launchVehiclePotrait from '../assets/technology/image-launch-vehicle-portrait.jpg';
+import spaceCapsuleLandscape from '../assets/technology/image-space-capsule-landscape.jpg';
+import spaceCapsulePotrairt from '../assets/technology/image-space-capsule-portrait.jpg';
+import spacePortLandscape from '../assets/technology/image-spaceport-landscape.jpg';
+import spacePortPotrait from '../assets/technology/image-spaceport-portrait.jpg';
 
 const Technology = () => {
 
     const [techIndex, setTechIndex] = useState(0);
     const [techWidth, setTechWidth] = useState(false);
+
+    const imagesLandscape = [launchVehicleLandscape, spacePortLandscape, spaceCapsuleLandscape];
+    const imagesPotrait = [launchVehiclePotrait, spacePortPotrait, spaceCapsulePotrairt];
 
     useEffect(() => {
 
@@ -63,8 +65,8 @@ const Technology = () => {
             </div>
             <div className="technology-right">
                 <img src={techWidth ? 
-                    Data?.technology[techIndex]?.images?.landscape :
-                    Data?.technology[techIndex]?.images?.portrait
+                    imagesLandscape[techIndex] :
+                    imagesPotrait[techIndex]
                 } alt="" />
             </div>
         </div>
