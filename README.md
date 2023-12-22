@@ -44,16 +44,16 @@
   <img src='https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/x8skdsukkmwiwxejthio.jpg' alt='News Homepage'>
 </div>
 
-
 <br>
-<!-- 
-<!-- ## **Links**
+
+
+ ## **Links**
 
 - |||
   | :----- | :----- |
   | Solution URL: | [SPACE TOURISM MULTI PAGE WEBSITE🎯 [ REACT - CSS ]](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3) |
   | Live Site URL: | [Click here](https://space-tourism-multi-page-website-uf2t.vercel.app) |
-  ||| --> -->
+  |||
 
 <br>
 
