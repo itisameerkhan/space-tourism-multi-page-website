@@ -1,5 +1,6 @@
 import './Crew.css';
 import '../assets/destination/background-destination-desktop.jpg';
+import '../assets/destination/background-destination-mobile.jpg';
 import Data from '../data.json';
 import { useState } from 'react';
 

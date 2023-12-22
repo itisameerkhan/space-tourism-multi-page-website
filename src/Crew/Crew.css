@@ -124,6 +124,7 @@ html
         align-items: center;
         justify-content: center;
         width: 100%;
+        background-image: url('../assets//destination/background-destination-mobile.jpg');
     }
     .crew-left
     {

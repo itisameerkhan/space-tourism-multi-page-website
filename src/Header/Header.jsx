@@ -9,7 +9,6 @@ const Header = () => {
 
     const [burger, setBurger] = useState(true);
 
-    console.log('burger status -> ', burger);
 
     useEffect(() => {
         const handleResize = () => {
