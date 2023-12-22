@@ -3,6 +3,11 @@ import Data from '../data.json';
 import { useState } from 'react';
 import '../assets/destination/background-destination-desktop.jpg';
 import '../assets/destination/background-destination-mobile.jpg';
+import '../assets/destination/image-europa.png';
+import '../assets/destination/image-mars.png';
+import '../assets/destination/image-moon.png';
+import '../assets/destination/image-titan.png';
+
 
 const Destination = () => {
 

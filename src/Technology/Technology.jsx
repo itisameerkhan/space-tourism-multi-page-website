@@ -1,8 +1,15 @@
 import './Technology.css';
-import '../assets/technology/background-technology-desktop.jpg';
-import '../assets/technology/background-technology-mobile.jpg';
 import Data from '../data.json';
 import { useEffect, useState } from 'react';
+import '../assets/technology/background-technology-desktop.jpg';
+import '../assets/technology/background-technology-mobile.jpg';
+import '../assets/technology/image-launch-vehicle-landscape.jpg';
+import '../assets/technology/image-launch-vehicle-portrait.jpg';
+import '../assets/technology/background-technology-mobile.jpg';
+import '../assets/technology/image-space-capsule-landscape.jpg';
+import '../assets/technology/image-space-capsule-portrait.jpg';
+import '../assets/technology/image-spaceport-landscape.jpg';
+import '../assets/technology/image-spaceport-portrait.jpg';
 
 const Technology = () => {
 

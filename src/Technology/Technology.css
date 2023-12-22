@@ -134,6 +134,7 @@ html
 {
     .technology
     {
+        background-image: url('../assets/technology/background-technology-mobile.jpg');
         flex-direction: column;
         height: 120vh;
         gap: 0;

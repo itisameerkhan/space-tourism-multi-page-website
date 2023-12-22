@@ -1,8 +1,13 @@
 import './Crew.css';
-import '../assets/destination/background-destination-desktop.jpg';
-import '../assets/destination/background-destination-mobile.jpg';
 import Data from '../data.json';
 import { useState } from 'react';
+import '../assets/destination/background-destination-desktop.jpg';
+import '../assets/destination/background-destination-mobile.jpg';
+import '../assets/crew/image-anousheh-ansari.png';
+import '../assets/crew/image-douglas-hurley.png';
+import '../assets/crew/image-mark-shuttleworth.png';
+import '../assets/crew/image-victor-glover.png';
+
 
 const Crew = () => {
 
